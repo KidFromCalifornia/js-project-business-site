@@ -1,3 +1,4 @@
+9
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -5,64 +6,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
 
   <title>Midnight Matinee</title>
 </head>
-<section class="grid-container">
-  <nav class="grid1">
-    <ul>
-      <li><a href=" #home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#allposter">All Posters</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
-  <header class="grid2">
-    <div id="header">
-      <div class="Head-image">
-        <img src="./images/theatre.png" alt=" Black & white threatre">
-      </div>
-      <div class="neon-text">
-        <h1 class="title-text" data-text="MIDNIGHT MATINÉE">MIDNIGHT<br>MATINÉE
+
+<nav>
+  <ul>
+    <li><a href=" #home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#allposter">All Posters</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+<header>
+  <section>
+    <div class="hd">
+      <img id="head-image" src="./images/theatre.png" alt=" Black & white threatre">
+      <div id="neon-text">
+        <h1 class="titleH1" data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
         </h1>
       </div>
-    </div>
-  </header>
+  </section>
 
-  <body>
-    <div class="grid-item1 flex-container one">
-      <div class="flex-item item1"><img src="./images/haunted-hill.jpg">House <button> BUY </button></div>
-      <div class="flex-item item2"><img src="./images/bride.jpg"> bride <button> BUY </button></div>
-      <div class="flex-item item3"><img src="./images/Godzilla.jpg">godzilla <Button> BUY </Button></div>
-      <div class=" flex-item item4"> <img src="./images/island.jpg"> island <button> BUY</button></div>
-      <div class="flex-item item5"><img src="./images/brain.jpg"> Brain <Button> BUY </Button></div>
-    </div>
+</header>
 
-    <div class="grid-item2  flex-container two">
-      <div class="flex-item item4">
-        <img src="./images/double-feature.jpg"><Button> BUY </Button>
-      </div>
-    </div>
-    <div class=" grid-item3 flex-container three">
-      <div class="flex-item item5">
+<body>
+
+  <section class="grid-container">
+    <div class="column one">
+      <div class="inside item1">
         <img src="./images/son-dr-j.jpg"><Button> BUY </Button>
       </div>
-      <div class="flex-item item6">
-        <img src="./images/horrors.jpg">
-        <img src="./images/black-lagoon.jpg">
+      <div class="inside item2"><img src="./images/bride.jpg">
+        <p>Bride of Frankenstein (1935) </p> <button> BUY </button>
       </div>
+      <div class="inside item3"><img src="./images/Godzilla.jpg">
+        <p>Gojira (1954) </p> <Button> BUY </Button>
+      </div>
+      <div class="inside item4"> <img src="./images/Dracula2.jpg"> <button> BUY</button></div>
 
-      <div class="flex-item item7">
-        <img src="./images/mummy2.jpg">
-        <img src="./images/Dracula2.jpg">
+    </div>
+    <div class="column two">
+      <div class="inside item5">
+        <img src="./images/fearless.jpg"><Button> BUY </Button>
+        <p>Fearless Vampire killers</p>
       </div>
     </div>
-  </body>
-  <footer class="grid4">
-    ©Jonny Hicks 2025
-  </footer>
+    <div class="column three">
+      <div class="inside item6">
+        <img src="./images/raven.jpg"><Button> BUY </Button>
+      </div>
+      <div class="inside item7"><img src="./images/black-lagoon.jpg"><Button> BUY </Button>
+      </div>
+      <div class="inside item8">
+        <img src="./images/mummy2.jpg"><Button> BUY </Button>
+      </div>
+      <div class="inside item9"><img src="./images/king-kong.jpg"><Button> BUY </Button>
+      </div>
+    </div>
+  </section>
+</body>
+<footer id="footer">
+
+  <p> ©Jonny Hicks 2025
+
+</footer>
 </section>
 
 </html
