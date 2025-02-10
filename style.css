@@ -1,0 +1,136 @@
+html {
+  background-color: #1e2120;
+  margin: 0 auto;
+}
+
+/*head*/
+.grid2 {
+  display: block;
+  margin: .20 auto;
+  padding-bottom: 2%;
+  justify-content: center;
+  left: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+body {
+  margin: 0%;
+}
+
+.neon-text {
+  display: flex;
+  color: #fda64e;
+  font-family: 10em;
+  text-shadow: 0 0 5px #de3c01, 0 0 10px #de6801, 0 0 20px #de3c01, 0 0 40px #de3c01, 0 0 100px #de6801;
+  animation: createbox 2s infinite;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-size-adjust: 100%;
+}
+
+@keyframes createbox {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(7);
+  }
+}
+
+/*navbar*/
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+}
+
+a {
+  display: inline-flex;
+  color: #fda64e;
+  text-align: center;
+  padding-inline: 0.5em;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #313131;
+  color: rgb(235, 4, 4);
+}
+
+
+/* grid*/
+
+.grid-container1 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3% 1fr 2fr 1%;
+
+  grid-template-areas:
+    "grid1 grid1 grid1"
+    "grid2 grid2 grid2"
+    "grid-item1 grid-item2 grid-item3"
+    "grid4 grid4 grid4";
+
+}
+
+.grid2 {
+  justify-items: auto;
+  object-fit: contain;
+
+}
+
+/* Flexbox*/
+
+
+
+
+footer {
+  background-color: #1E1E1E;
+
+  font: 20px Arial, Helvetica, sans-serif, sans-serif;
+  color: #cbc23a;
+  padding: 5px;
+  text-align: end;
+  justify-content: center;
+  align-content: center;
+  text-size-adjust: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1080px) {
+
+  .grid-container1 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "grid1"
+      "grid2"
+      "grid-item1"
+      "grid-item2"
+      "grid-item3"
+      "grid4";
+    width: auto;
+    height: auto;
+    text-size-adjust: 50%;
+  }
+
+  nav {
+    flex: 100%
+  }
+}
