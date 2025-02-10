@@ -5,6 +5,7 @@ html {
 
 /*head*/
 .grid2 {
+  grid-area: Head;
   display: block;
   margin: .20 auto;
   padding-bottom: 2%;
@@ -14,15 +15,10 @@ html {
   height: auto;
 }
 
-
-body {
-  margin: 0%;
-}
-
 .neon-text {
   display: flex;
   color: #fda64e;
-  font-family: 10em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 0 0 5px #de3c01, 0 0 10px #de6801, 0 0 20px #de3c01, 0 0 40px #de3c01, 0 0 100px #de6801;
   animation: createbox 2s infinite;
   position: absolute;
@@ -31,6 +27,8 @@ body {
   left: 60%;
   transform: translate(-50%, -50%);
   text-size-adjust: 100%;
+  letter-spacing: 3px;
+
 }
 
 @keyframes createbox {
@@ -45,7 +43,8 @@ body {
 
 /*navbar*/
 
-nav {
+.grid1 {
+  grid-area: nav;
   display: flex;
   justify-content: flex-end;
   white-space: nowrap;
@@ -75,35 +74,82 @@ li a:hover {
   color: rgb(235, 4, 4);
 }
 
+/*boyd*/
+
+body {
+  margin: 0%;
+}
+
+.grid-item1 {
+  grid-area: left;
+}
 
 /* grid*/
 
-.grid-container1 {
+.grid-container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 3% 1fr 2fr 1%;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
 
   grid-template-areas:
-    "grid1 grid1 grid1"
-    "grid2 grid2 grid2"
-    "grid-item1 grid-item2 grid-item3"
+    "nav nav nav"
+    "head head head"
+    "left center right"
     "grid4 grid4 grid4";
 
 }
 
-.grid2 {
-  justify-items: auto;
-  object-fit: contain;
 
-}
 
 /* Flexbox*/
 
+.flexcontainer {
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  object-fit: scale-down;
+
+}
+
+.grid-item1 {
+  grid-area: left;
+}
+
+.grid-item2 {
+  grid-area: center;
+}
+
+.grid-item3 {
+  grid-area: right;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: whitesmoke;
+  padding: 2%;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+
+}
 
 
+button {
+  background-color: #fda64e;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  border: whitesmoke;
 
-footer {
+}
+
+.grid4 {
+  grid-area: footer;
   background-color: #1E1E1E;
-
   font: 20px Arial, Helvetica, sans-serif, sans-serif;
   color: #cbc23a;
   padding: 5px;
@@ -113,18 +159,19 @@ footer {
   text-size-adjust: 100%;
 }
 
+
 /* Media Queries */
 @media (max-width: 1080px) {
 
-  .grid-container1 {
+  .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "grid1"
-      "grid2"
-      "grid-item1"
-      "grid-item2"
-      "grid-item3"
-      "grid4";
+      "nav"
+      "head"
+      "left"
+      "center"
+      "right"
+      "footer";
     width: auto;
     height: auto;
     text-size-adjust: 50%;
