@@ -29,6 +29,19 @@ html {
 
 }
 
+.login {
+  display: flex;
+  padding: 1em;
+  justify-items: start;
+  margin: 1em;
+  border-radius: 5px;
+  font: 1em Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+  justify-items: start;
+  align-items: start;
+}
+
+
 
 
 #head-image {
@@ -204,11 +217,14 @@ body {
 .inside img {
   width: 100%;
   height: auto;
-  margin: 1em;
+  filter: grayscale(100%);
 }
 
 
 
+.inside img:hover {
+  filter: grayscale(0%);
+}
 
 button {
   background-color: #fda64e;
@@ -233,10 +249,24 @@ footer {
 
 
 /* Small devices (phones, 320px and up) */
-@media (min-width: 329px) and (max-width: 768px) {
+@media (max-width: 1024px) {
   .hd {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    background-image: url(./images/squareThre.png) scroll no-repeat center/cover;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100%
+  }
+
+  .hd img {
+    display: none;
+  }
+
+  nav {
+    display: none;
   }
 
   #neon-text {
@@ -256,7 +286,7 @@ footer {
 
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "left"
       "center"
@@ -284,8 +314,6 @@ footer {
     grid-row: auto;
   }
 }
-
-
 
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) and (max-width: 1200px) {
