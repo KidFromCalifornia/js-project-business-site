@@ -12,7 +12,7 @@
   <link rel="preconnect"
         href="https://fonts.gstatic.com"
         crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Notable&display=swap"
         rel="stylesheet">
 
   <title>Midnight Matinee</title>
@@ -22,105 +22,245 @@
 
 
 <body>
-  <!-- Navigation -->
+  <!-- Navigation for Portrait - small screens ( max-width 1020px ) 
+
   <nav>
-    <ul>
-      <li><a href=" #home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#allposter">All Posters</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-    <!-- long in Forms-->
-    <div class="login">
-      <form action="">
-        <label for="username">Username:</label><br>
-        <input type="text"
-               id="username"
-               name="username"><br>
-        <label for="pwd">Password:</label><br>
-        <input type="password"
-               id="pwd"
-               name="pwd"><br><br>
-        <input type="submit"
-               value="Submit">
-      </form>
+    <div class="big-nav">
+      <div class="topbar top-container">
+        <div class="topbar-usp">
+          <ul>
+            <li>Free shipping on to or more items</li>
+            <li>Fast delivery</li>
+            <li>Open 365 days of the year</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
-  <!-- Header -->
-  <header>
-    <section>
-      <div class="hd">
-        <img id="head-image"
-             src="./images/theatre.png"
-             alt=" Black & white threatre">
-        <div id="neon-text">
-          <h1 class="titleH1"
-              data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
-          </h1>
+  <div class="main">
+    <div class="container">
+      <div class="left">
+        <div class="bat-logo"><a href="https://midnight-matinee.netlify.app/"><img src="./icons/bat-logo.svg"
+                 alt=" Bat Logo"
+                 title="Bat Logo"></a></div>
+      </div>
+      <div class="center">
+        <div id="search-"
+             class="search">
+          <div id="search-box"
+               class="search-box">
+            <div class="search-field"><input type="text"
+                     placeholder="Sök..."
+                     class="input"> <i class="fas fa-search"></i>
+              <div class="dropdown">
+                <div class="empty">
+                  Sökningen gav inget resultat...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="actions"><a aria-label="my account"
+             href="##"
+             class="button account-button"><span class="icon"> &#xf6b7;
+            </span></a>
+          <div class="basket-icon"><button aria-label="cart"
+                    class="button cart-button"><i class="cart-icon">#xe8cc;</i> </button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  -->
+  <nav>
+    <div class="small-nav">
+      <div class="bat-logo">
+        <a href="https://midnight-matinee.netlify.app/">
+          <img src="./icons/batlogo.svg"
+               alt=" Bat Logo"
+               title="Bat Logo">
+        </a>
+      </div>
+      <a id="ham">&#9776;
+      </a>
+    </div>
+
+  </nav>
+
+
+
+
+
+  <!-- Header video  on mobile and hero image on landscape/ large screnens -->
+  <header class="small-header">
+    <div class="hero-video">
+      <video autoplay
+             loop
+             muted
+             playsinline
+             class="hero-video">
+        <source src="./images/dead-men-walk-intro.mp4"
+                type="video/mp4">
+      </video>
+      <div class="shadow"></div>
+
+    </div>
+    <div id="neon-text">
+      <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
+      </h1>
+    </div>
+  </header>
+  </div>
+
+  <header class="big-header">
+    <img id="hero-image"
+         src="./images/theatre.webp"
+         alt=" old and creepy Black & white threatre">
+    <div class="shadow"></div>
+    <div id="neon">
+      <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
+      </h1>
+    </div>
+    </section>
+  </header>
+
+  <!-- Main Content -->
+
+  <Main>
+    <article>
+      <h2 id="MM-title"
+          style="letter-spacing: 3px;">
+        I BID YOU WELCOME... </h2>
+      <p style="letter-spacing: 1px;">
+        Where the shadows whisper and the legends live on! Step into our crypt of classic horror movie posters,
+        unearthed from the golden age of terror—spanning the eerie realms of the 1930s to the 1960s. From the fanged
+        menace of Dracula to the towering dread of Godzilla, our collection is a shrine to the macabre. Whether you're a
+        devoted horror fan or seeking a spine-chilling gift, you'll find the perfect relic to haunt your walls. Dare to
+        enter? Browse our collection… if you dare.
+      </p>
+    </article>
+
+    <!-- Main Grid layout  -->
+    <section class="grid-container">
+      <div class="column one">
+        <div class="inside item1">
+          <img src="./images/son-dr-j.webp">
+          <p> Son of doctor Jekyll </p><button> BUY </button>
+        </div>
+        <div class="inside item2">
+          <img src="./images/bride.webp">
+          <p>Bride of Frankenstein (1935) </p> <button> BUY </button>
+        </div>
+        <div class="inside item3">
+          <img src="./images/Godzilla.webp">
+          <p>Gojira (1954) </p> <button> BUY </button>
+        </div>
+        <div class="inside item4">
+          <img src="./images/Dracula2.webp">
+          <p> Dracula </p><button> BUY</button>
+        </div>
+        <div class="inside item5">
+          <img src="./images/Dracula2.webp">
+          <p> Dracula </p><button> BUY</button>
+        </div>
+        <div class="inside item6">
+          <img src="./images/Dracula2.webp">
+          <p> Dracula </p><button> BUY</button>
+        </div>
+
+      </div>
+      <div class="column two">
+        <div class="inside item7">
+          <img src="./images/fearless.webp"><Button> BUY </Button>
+          <p>Fearless Vampire killers </p>
+        </div>
+      </div>
+      <div class="column three">
+        <div class="inside item8">
+          <img src="./images/brain.webp">
+          <p>The Brain That Wouldn't Die</p><button> BUY </button>
+        </div>
+        <div class="inside item9">
+          <img src="./images/black-lagoon.webp"><button> BUY </button>
+        </div>
+        <div class="inside item10">
+          <img src="./images/mummy2.webp"><button> BUY </button>
+        </div>
+        <div class="inside item11">
+          <img src="./images/king-kong.webp"><button> BUY </button>
+        </div>
+        <div class="inside item12">
+          <img src="./images/king-kong.webp"><button> BUY </button>
+        </div>
+        <div class="inside item13">
+          <img src="./images/king-kong.webp"><button> BUY </button>
         </div>
       </div>
     </section>
-  </header>
-  <!-- Forms-->
+    <section>
+      <div class="newsletter">
+        <div class="grid-left signup1">
+          <img src="./images/1_IJm6jVtWk9BY7Gg3yoOBng.png">
+        </div>
 
-  <form action="">
-    <label for="username">Username:</label><br>
-    <input type="text"
-           id="username"
-           name="username"><br>
-    <label for="pwd">Password:</label><br>
-    <input type="password"
-           id="pwd"
-           name="pwd"><br><br>
-    <input type="submit"
-           value="Submit">
-  </form>
-  <!-- Grid -->
+        <div class="grid-right signup2">
+          <form action="/action_page.php">
+            <div class="container">
+              <h2> Enter the Shadows… If You Dare! </h2>
+              <p> Sign up for our Nightmare Newsletter and be the first to uncover
+                limited-edition prints, spine-chilling poster editions coming soon, and blink-and-you’ll-miss-it snap
+                deals. Once they’re gone, they’re gone forever! Don’t let these exclusive horrors slip into the
+                void—subscribe now… before it’s too late! </p>
+            </div>
 
-  <section class="grid-container">
-    <div class="column one">
-      <div class="inside item1">
-        <img src="./images/son-dr-j.jpg">
-        <p></p> Son of doctor Jekyll </p><Button> BUY </Button>
+            <div class="container">
+              <input type="text"
+                     placeholder="Name"
+                     name="name"
+                     required>
+              <input type="text"
+                     placeholder="Email address"
+                     name="mail"
+                     required>
+              <label>
+                <input type="checkbox"
+                       checked="checked"
+                       name="subscribe"> Only Inventory Updates
+              </label>
+              <label>
+                <input type="checkbox"
+                       checked="checked"
+                       name="subscribe"> Weekly Newsletter
+              </label>
+            </div>
+            <div class="container">
+              <input type="submit"
+                     value="Subscribe">
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="inside item2"><img src="./images/bride.jpg">
-        <p>Bride of Frankenstein (1935) </p> <button> BUY </button>
-      </div>
-      <div class="inside item3"><img src="./images/Godzilla.jpg">
-        <p>Gojira (1954) </p> <Button> BUY </Button>
-      </div>
-      <div class="inside item4"> <img src="./images/Dracula2.jpg">
-        <p> Dracula </p><button> BUY</button>
-      </div>
-
+    </section>
+  </Main>
+  <!-- Footer -->
+  <footer>
+    <div id="list-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#Archive">Archive</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </Div>
+    <div>
+      <p> ©Jonny Hicks 2025 </p>
     </div>
-    <div class="column two">
-      <div class="inside item5">
-        <img src="./images/fearless.jpg"><Button> BUY </Button>
-        <p>Fearless Vampire killers </p>
-      </div>
-    </div>
-    <div class="column three">
-      <div class="inside item6">
-        <img src="./images/brain.jpg">
-        <p>The Raven</p><Button> BUY </Button>
-      </div>
-      <div class="inside item7"><img src="./images/black-lagoon.jpg"><Button> BUY </Button>
-      </div>
-      <div class="inside item8">
-        <img src="./images/mummy2.jpg"><Button> BUY </Button>
-      </div>
-      <div class="inside item9"><img src="./images/king-kong.jpg"><Button> BUY </Button>
-      </div>
-    </div>
-  </section>
+  </footer>
 </body>
-<footer id="footer">
 
-  <p> ©Jonny Hicks 2025
 
-</footer>
-</section>
-
-</html
+</html>
