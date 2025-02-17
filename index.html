@@ -14,8 +14,8 @@
         crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Notable&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 
   <title>Midnight Matinee</title>
 </head>
@@ -24,9 +24,18 @@
 
 
 <body>
-  <!-- Navigation for Portrait - small screens ( max-width 1020px ) 
-
-  <nav>
+  <!--
+    Navigation
+    for
+    Portrait
+    -
+    small
+    screens
+    (
+    max-width
+    1020px
+    )
+    <nav>
     <div class="big-nav">
       <div class="topbar top-container">
         <div class="topbar-usp">
@@ -38,48 +47,67 @@
         </div>
       </div>
     </div>
-  </nav>
-  <div class="main">
-    <div class="container">
-      <div class="left">
-        <div class="bat-logo"><a href="https://midnight-matinee.netlify.app/"><img src="./icons/bat-logo.svg"
-                 alt=" Bat Logo"
-                 title="Bat Logo"></a></div>
-      </div> 
-      <div class="center">
-        <div id="search-"
-             class="search">
-          <div id="search-box"
-               class="search-box">
-            <div class="search-field"><input type="text"
-                     placeholder="Sök..."
-                     class="input"> <i class="fas fa-search"></i>
-              <div class="dropdown">
-                <div class="empty">
-                  Sökningen gav inget resultat...
+    </nav>
+    <div class="main">
+      <div class="container">
+        <div class="left">
+          <div class="bat-logo"><a href="https://midnight-matinee.netlify.app/"><img src="./icons/bat-logo.svg"
+                   alt=" Bat Logo"
+                   title="Bat Logo"></a></div>
+        </div>
+        <div class="center">
+          <div id="search-"
+               class="search">
+            <div id="search-box"
+                 class="search-box">
+              <div class="search-field"><input type="text"
+                       placeholder="Sök..."
+                       class="input"> <i class="fas fa-search"></i>
+                <div class="dropdown">
+                  <div class="empty">
+                    Sökningen gav inget resultat...
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="right">
-        <div class="actions"><a aria-label="my account"
-             href="##"
-             class="button account-button"><span class="icon"> &#xf6b7;
-            </span></a>
-          <div class="basket-icon"><button aria-label="cart"
-                    class="button cart-button"><i class="cart-icon">#xe8cc;</i> </button></div>
+        <div class="right">
+          <div class="actions"><a aria-label="my account"
+               href="##"
+               class="button account-button"><span class="icon"> &#xf6b7;
+              </span></a>
+            <div class="basket-icon"><button aria-label="cart"
+                      class="button cart-button"><i class="cart-icon">#xe8cc;</i> </button></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
- 
-  -->
 
 
+    -->
 
+
+
+  <!-- on mobile navbar is after Header -->
+  <nav class="mobile-nav">
+    <div class="nav-left">
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!----
+        <div class="nav-right">
+          <a href="javascript:void(0)"
+             id="mobile-search-trigger"
+             class="search-button is-hidden-desktop"><span class="material-symbols-outlined">search</span></a>
+          </a>
+        -->
+
+  </nav>
 
 
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
@@ -103,6 +131,7 @@
   </header>
   </div>
 
+
   <header class="big-header">
     <img id="hero-image"
          src="./images/theatre.webp"
@@ -115,31 +144,19 @@
     </section>
   </header>
 
-  <!-- on mobile navbar is after Header -->
-  <nav class="mobile-nav">
+  <!-- hamburger list items -->
+  <div class="ham-offscreen">
+    <ul>
+      <li>Home</li>
+      <li>Login</li>
+      <li>Make A Request</li>
+      <li>Newsletter</li>
+      <li>Forum</li>
+    </ul>
+  </div>
 
-    <div class="smallnav-left">
-      <a href="javascript:void(0)"
-         class="ham-menu"><i class="material-icons">
-          &#9776; </i></a>
-      <a href="javascript:void(0)"
-         id="mobile-search-trigger"
-         class="search-button is-hidden-desktop"><svg class="icon">
-          &#xe8b6;</svg></a>
-    </div>
-    <div class="smallnav-center">
-      <a class="bat-logo"
-         href="https://midnight-matinee.netlify.app/">
-        <img src="./icons/batlogo.svg"
-             alt=" Bat Logo"
-             title="Bat Logo">
-      </a>
-    </div>
-
-
-  </nav>
-
-  <!-- Main Content -->
+  <!--Main Content
+    -->
 
 
   <Main>
@@ -150,8 +167,10 @@
       <p style="letter-spacing: 1px;">
         Where the shadows whisper and the legends live on! Step into our crypt of classic horror movie posters,
         unearthed from the golden age of terror—spanning the eerie realms of the 1930s to the 1960s. From the fanged
-        menace of Dracula to the towering dread of Godzilla, our collection is a shrine to the macabre. Whether you're a
-        devoted horror fan or seeking a spine-chilling gift, you'll find the perfect relic to haunt your walls. Dare to
+        menace of Dracula to the towering dread of Godzilla, our collection is a shrine to the macabre. Whether you're
+        a
+        devoted horror fan or seeking a spine-chilling gift, you'll find the perfect relic to haunt your walls. Dare
+        to
         enter? Browse our collection… if you dare.
       </p>
     </article>
@@ -275,5 +294,6 @@
   </footer>
 </body>
 
+<script src="Dom.js"></script>
 
 </html>

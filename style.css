@@ -18,39 +18,85 @@ body {
   font: "dm sans", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+}
+
 /* nav for small screens  */
 .mobile-nav {
-  align-items: center;
+  position: sticky;
   display: flex;
   flex-direction: row;
-  background-color: #1E1E1E;
-  justify-content: space-evenly;
-  position: relative;
-  padding: .5rem .75rem;
+  background-color: #2a2a2a;
+  padding: 1rem;
 }
 
-.smallnav-parent {
-  flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
-}
-
-.smallnav.left {
+.ham-offscreen {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #353535;
+  height: 100vh;
+  width: 100%;
+  max-width: 85%;
+  position: fixed;
+  top: 0;
+  left: -450px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  justify-content: space-evenly;
-  align-content: center;
-  align-self: center;
+  font-size: 2rem;
+  transition: 0.3s;
+
 }
 
-.material-icons {
-  display: block;
-  color: #cc3300;
-  padding: 2px;
+.ham-offscreen.active {
+  left: 0;
 }
 
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  position: relative;
+}
+
+.ham-menu span {
+  background-color: #cc3300;
+  border-radius: 25px;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform .3s ease;
+  transform: (-50%, -50);
+
+}
+
+.ham-menu.active span:nth-child(1) {
+  display: none;
+}
+
+.ham-menu.active span:nth-child(3) {
+  display: none;
+
+}
+
+
+
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+
+}
 
 .big-nav {
   display: none;
@@ -58,12 +104,11 @@ body {
 
 
 
-.bat-logo {
-  display: block;
-  width: 5em;
+.nav-center img {
+  display: flex;
+  width: auto;
   height: 100%;
-  transform: scale(0.8);
-  align-self: center;
+
 }
 
 
@@ -330,10 +375,6 @@ footer {
   }
 
 
-  .login {
-    display: none;
-
-  }
 
   .big-nav {
     display: none;
@@ -341,9 +382,6 @@ footer {
 
   }
 
-  .nav-list {
-    display: none;
-  }
 }
 
 /* Large devices (desktops, 1024px and up) */
@@ -354,6 +392,9 @@ footer {
     display: none;
   }
 
+  .ham-offscreen {
+    display: none;
+  }
 
   .big-nav {
     background: rgb(46, 53, 51);
