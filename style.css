@@ -15,21 +15,36 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font: 1em "dm sans", sans-serif;
+  font: "dm sans", sans-serif;
 }
 
 /* nav for small screens  */
-
-.small-nav {
+.mobile-nav {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   background-color: #1E1E1E;
-  padding: 20px;
   justify-content: space-between;
-
-
+  position: relative;
+  padding: .5rem .75rem;
 }
+
+.smallnav-parent {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.smallnav.left {
+  display: inline;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #cc3300;
+}
+
+
 
 .big-nav {
   display: none;
@@ -42,15 +57,15 @@ body {
   width: 5em;
   height: 100%;
   transform: scale(0.8);
+  align-self: center;
 }
 
-#ham {
+.material-icons {
   display: block;
   color: #cc3300;
   font-size: 5em;
   height: 100%;
   padding: 2px;
-
 }
 
 /*head*/
@@ -217,6 +232,9 @@ button {
   justify-content: center;
   background-color: #2a2d2c;
   box-shadow: 0 8px 6px -6px black;
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
 
 }
 
@@ -338,7 +356,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-  .small-nav {
+  .mobile-nav {
     display: none;
   }
 

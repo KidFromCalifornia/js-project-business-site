@@ -14,6 +14,8 @@
         crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Notable&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <title>Midnight Matinee</title>
 </head>
@@ -75,20 +77,6 @@
 
  
   -->
-  <nav>
-    <div class="small-nav">
-      <div class="bat-logo">
-        <a href="https://midnight-matinee.netlify.app/">
-          <img src="./icons/batlogo.svg"
-               alt=" Bat Logo"
-               title="Bat Logo">
-        </a>
-      </div>
-      <a id="ham">&#9776;
-      </a>
-    </div>
-
-  </nav>
 
 
 
@@ -127,7 +115,32 @@
     </section>
   </header>
 
+  <!-- on mobile navbar is after Header -->
+  <nav class="mobile-nav">
+
+    <div class="smallnav-left">
+      <a href="javascript:void(0)"
+         class="ham-menu"><i class="material-icons">
+          &#9776; </i></a>
+      <a href="javascript:void(0)"
+         id="mobile-search-trigger"
+         class="search-button is-hidden-desktop"><i class="material-icons">
+          &#xe8b6;</i></a>
+    </div>
+    <div class="smallnav-center">
+      <a class="bat-logo"
+         href="https://midnight-matinee.netlify.app/">
+        <img src="./icons/batlogo.svg"
+             alt=" Bat Logo"
+             title="Bat Logo">
+      </a>
+    </div>
+
+
+  </nav>
+
   <!-- Main Content -->
+
 
   <Main>
     <article>
