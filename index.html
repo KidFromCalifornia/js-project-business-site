@@ -14,6 +14,8 @@
         crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Notable&display=swap"
         rel="stylesheet">
+  <script src="https://kit.fontawesome.com/04d91e792e.js"
+          crossorigin="anonymous"></script>
 
 
 
@@ -24,7 +26,7 @@
 
 
 <body>
-
+  <!--big nav for 1020px -->
   <nav class="big-navbar">
     <ul id="bignav-left">
       <li><a href="#home">Home </a></li>
@@ -32,14 +34,20 @@
       <li><a href="#newsletter">Newsletter</a></li>
       <li><a href="#Discog">Forum</a></li>
     </ul>
+
     <ul id="bignav-right">
-      <li><a href="#search">Search</a></li>
-      <li><a href="#chart">Chart</a></li>
-      <li><a href="#login">Login</a></li>
+
+      <li><a href="#"><i class="fa-solid fa-bag-shopping"
+             title="My Bag"></i>
+        </a></li>
+      <li><a href="#"><i class="fa-solid fa-spaghetti-monster-flying"
+             title="mypages"></i></a></li>
     </ul>
-    </div>
   </nav>
+
+
   <!-- on mobile navbar is after Header -->
+
   <nav class="mobile-nav">
     <div class="mobilenav-left">
       <div class="ham-menu">
@@ -47,13 +55,13 @@
         <span></span>
         <span></span>
       </div>
-      <ul class="mobilenav-right">
-        <li><a href="#search">S</a></li>
-        <li><a href="#checkout">Bask</a></li>
-        <li><a href="#login">L</a></li>
-      </ul>
+    </div>
+    <ul class="mobilenav-right">
+      <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-spaghetti-monster-flying"></i></a></li>
+    </ul>
   </nav>
-
 
 
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
@@ -75,7 +83,6 @@
       </h1>
     </div>
   </header>
-  </div>
 
 
   <header class="big-header">
@@ -92,6 +99,7 @@
   </header>
 
   <!-- hamburger list items -->
+
   <div class="ham-offscreen">
     <ul>
       <li>Home</li>
@@ -105,7 +113,7 @@
   <!--Main Content -->
 
 
-  <Main>
+  <main>
     <article>
       <h2 id="MM-title"
           style="letter-spacing: 3px;">
@@ -120,8 +128,32 @@
         enter? Browse our collection… if you dare.
       </p>
     </article>
-
+    <section class="selectbar">
+      <select id="monsterDropdown"
+              onchange="showDescription()">
+        <option value="Choose">
+          <h3>hoose your Monster</h3>
+        </option>
+        <option value="vampire">Vampires</option>
+        <option value="frankenstein">Frankenstein’s Monster</option>
+        <option value="mummy">Mummies</option>
+        <option value="werewolf">Werewolves</option>
+        <option value="invisible_man">Invisible Men</option>
+        <option value="zombie">Zombies</option>
+        <option value="mad_scientist">Mad Scientists & Their Creations</option>
+        <option value="ghost">Ghosts & Phantoms</option>
+        <option value="mutant">Mutants & Deformed Beings</option>
+        <option value="giant_monster">Giant Monsters</option>
+        <option value="cursed_human">Cursed Humans</option>
+        <option value="evil_spirit">Evil Spirits & Supernatural Entities</option>
+        <option value="puppet">Living Puppets/Dolls</option>
+        <option value="reanimated_corpse">Reanimated Corpses</option>
+        <option value="hybrid_creature">Hybrid Creatures</option>
+        <p id="description"></p>
+      </select>
+    </section>
     <!-- Main Grid layout  -->
+
     <section class="grid-container">
       <div class="column one">
         <div class="inside item1">
@@ -178,6 +210,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Newletter form-->
     <section>
       <div id="newsletter">
         <div class="grid-left signup1">
@@ -193,7 +227,7 @@
                 void—subscribe now… before it’s too late! </p>
             </div>
 
-            <div class="container">
+            <div class="input-container">
               <input type="text"
                      placeholder="Name"
                      name="name"
@@ -213,7 +247,7 @@
                        name="subscribe"> Weekly Newsletter
               </label>
             </div>
-            <div class="container">
+            <div class="input-container">
               <input type="submit"
                      value="Subscribe">
             </div>
@@ -221,14 +255,11 @@
         </div>
       </div>
     </section>
-  </Main>
   </main>
-  <footer id="site-footer">
+
+  <footer>
     <p> ©Jonny Hicks 2025 </p>
   </footer>
-  </footer>
-  <footer>
 
-    <script src="Dom.js"></script>
 
 </html>

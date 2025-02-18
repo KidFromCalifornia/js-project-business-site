@@ -163,6 +163,10 @@ ul {
   }
 }
 
+i {
+  color: #cc6600;
+  font-size: 30px;
+}
 
 /* display none for mobile*/
 
@@ -196,6 +200,41 @@ article {
   color: #faebd7;
   text-align: center;
 
+}
+
+h3:after {
+  content: "\f0b0";
+  color: #f9e2cc;
+}
+
+.selectbar {
+  display: sticky;
+  background-color: #1E1E1E;
+  align-content: center;
+  padding: 5px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+select {
+  background-color: #1E1E1E;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: #f9e2cc;
+
+  align-self: center;
+  justify-self: center;
+  margin-left: 1em;
+}
+
+.monster-page {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .grid-container {
@@ -259,6 +298,7 @@ button {
   box-shadow: 0 8px 6px -6px black;
   padding: 0 1em;
   text-align: center;
+  margin: 1em;
 
 }
 
@@ -347,7 +387,7 @@ footer {
 
 
   .form-container {
-    margin: 0;
+    margin: 2em;
   }
 
   .inside img {
@@ -405,8 +445,9 @@ li a {
     flex-direction: row;
     background-color: #1E1E1E;
     justify-content: space-between;
-
+    padding: 2px;
   }
+
 
   ul {
     display: inline-flex;

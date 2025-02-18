@@ -9,3 +9,17 @@ hamMenu.addEventListener('click', () => {
 }
 )
 
+
+function filterPage() {
+  let dropdown = document.getElementById("monsterDropdown");
+  let selectedMonster = dropdown.value;
+  let pages = document.getElementsByClassName("monster-page");
+
+  for (let i = 0; i < pages.length; i++) {
+    pages[i].style.display = "none";
+  }
+
+  if (selectedMonster) {
+    document.getElementById(selectedMonster).style.display = "block";
+  }
+}
