@@ -24,90 +24,36 @@
 
 
 <body>
-  <!--
-    Navigation
-    for
-    Portrait
-    -
-    small
-    screens
-    (
-    max-width
-    1020px
-    )
-    <nav>
-    <div class="big-nav">
-      <div class="topbar top-container">
-        <div class="topbar-usp">
-          <ul>
-            <li>Free shipping on to or more items</li>
-            <li>Fast delivery</li>
-            <li>Open 365 days of the year</li>
-          </ul>
-        </div>
-      </div>
+
+  <nav class="big-navbar">
+    <ul id="bignav-left">
+      <li><a href="#home">Home </a></li>
+      <li><a href="#contact">Make A wish </a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="#Discog">Forum</a></li>
+    </ul>
+    <ul id="bignav-right">
+      <li><a href="#search">Search</a></li>
+      <li><a href="#chart">Chart</a></li>
+      <li><a href="#login">Login</a></li>
+    </ul>
     </div>
-    </nav>
-    <div class="main">
-      <div class="container">
-        <div class="left">
-          <div class="bat-logo"><a href="https://midnight-matinee.netlify.app/"><img src="./icons/bat-logo.svg"
-                   alt=" Bat Logo"
-                   title="Bat Logo"></a></div>
-        </div>
-        <div class="center">
-          <div id="search-"
-               class="search">
-            <div id="search-box"
-                 class="search-box">
-              <div class="search-field"><input type="text"
-                       placeholder="Sök..."
-                       class="input"> <i class="fas fa-search"></i>
-                <div class="dropdown">
-                  <div class="empty">
-                    Sökningen gav inget resultat...
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <div class="actions"><a aria-label="my account"
-               href="##"
-               class="button account-button"><span class="icon"> &#xf6b7;
-              </span></a>
-            <div class="basket-icon"><button aria-label="cart"
-                      class="button cart-button"><i class="cart-icon">#xe8cc;</i> </button></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    -->
-
-
-
+  </nav>
   <!-- on mobile navbar is after Header -->
   <nav class="mobile-nav">
-    <div class="nav-left">
+    <div class="mobilenav-left">
       <div class="ham-menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </div>
-
-    <!----
-        <div class="nav-right">
-          <a href="javascript:void(0)"
-             id="mobile-search-trigger"
-             class="search-button is-hidden-desktop"><span class="material-symbols-outlined">search</span></a>
-          </a>
-        -->
-
+      <ul class="mobilenav-right">
+        <li><a href="#search">S</a></li>
+        <li><a href="#checkout">Bask</a></li>
+        <li><a href="#login">L</a></li>
+      </ul>
   </nav>
+
 
 
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
@@ -142,8 +88,8 @@
       </h1>
     </div>
     </section>
+    </div>
   </header>
-
   <!-- hamburger list items -->
   <div class="ham-offscreen">
     <ul>
@@ -155,8 +101,7 @@
     </ul>
   </div>
 
-  <!--Main Content
-    -->
+  <!--Main Content -->
 
 
   <Main>
@@ -206,7 +151,7 @@
       </div>
       <div class="column two">
         <div class="inside item7">
-          <img src="./images/fearless.webp"><Button> BUY </Button>
+          <img src="./images/fearless.webp"><button> BUY </button>
           <p>Fearless Vampire killers </p>
         </div>
       </div>
@@ -233,16 +178,14 @@
       </div>
     </section>
     <section>
-      <div class="newsletter">
+      <div id="newsletter">
         <div class="grid-left signup1">
-          <img src="./images/1_IJm6jVtWk9BY7Gg3yoOBng.png">
+          <img src="./images/thebride.png">
         </div>
-
         <div class="grid-right signup2">
-          <form action="/action_page.php">
+          <form action="https://httpbin.org/post">
             <div class="form-container">
-              <img src="./images/movieticket.svg"
-                   style="height: 100%;width: auto; scale: 50%;">
+              <img src="./images/movieticket.svg">
               <p> Sign up for our Nightmare Newsletter and be the first to uncover
                 limited-edition prints, spine-chilling poster editions coming soon, and blink-and-you’ll-miss-it snap
                 deals. Once they’re gone, they’re gone forever! Don’t let these exclusive horrors slip into the
@@ -278,23 +221,13 @@
       </div>
     </section>
   </Main>
-  <!-- Footer -->
-  <footer>
-    <div id="list-links">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#Archive">Archive</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </Div>
-    <div>
-      <p> ©Jonny Hicks 2025 </p>
-    </div>
+  </main>
+  <footer id="site-footer">
+    <p> ©Jonny Hicks 2025 </p>
   </footer>
-</body>
+  </footer>
+  <footer>
 
-<script src="Dom.js"></script>
+    <script src="Dom.js"></script>
 
 </html>
