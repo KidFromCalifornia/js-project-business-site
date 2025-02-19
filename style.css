@@ -33,6 +33,7 @@ ul {
 .mobilenav-right {
   display: inline-flex;
   flex-direction: row;
+  gap: 1em;
 }
 
 .ham-offscreen {
@@ -164,7 +165,7 @@ ul {
 }
 
 i {
-  color: #cc6600;
+  color: #f9e2cc;
   font-size: 30px;
 }
 
@@ -202,31 +203,26 @@ article {
 
 }
 
-h3:after {
-  content: "\f0b0";
-  color: #f9e2cc;
-}
 
 .selectbar {
-  display: sticky;
-  background-color: #1E1E1E;
+
   align-content: center;
   padding: 5px;
-  box-shadow: 0 8px 6px -6px black;
+
 }
 
 
 select {
-  background-color: #1E1E1E;
+  background-color: #2a2d2c;
   padding: 15px;
   font-size: 16px;
   border: none;
   border-radius: 10px;
   color: #f9e2cc;
-
   align-self: center;
   justify-self: center;
   margin-left: 1em;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .monster-page {
@@ -234,7 +230,7 @@ select {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+
 }
 
 .grid-container {
@@ -342,18 +338,22 @@ input[type=submit]:hover {
 
 /*footer*/
 
-footer {
-  display: none;
+.footer-parent {
+  display: flex;
   flex-direction: row;
-  background-color: #1E1E1E;
-  font: 20px Arial, Helvetica, sans-serif;
-  color: #f9e2cc;
-  padding: 5px;
-  text-align: end;
-  text-size-adjust: 100%;
-
+  justify-content: space-evenly;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  align-items: center;
+  align-content: center;
 }
 
+
+.footer-right {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1em;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 820px) and (max-width: 1024px) {
@@ -405,28 +405,28 @@ footer {
     display: none
   }
 
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+
+
+
+  li a {
+    display: block;
+    color: #faebd7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-}
-
-
-
-li a {
-  display: block;
-  color: #faebd7;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-
 
 /* Large devices (desktops, 1024px and up) */
 
@@ -443,9 +443,10 @@ li a {
   .big-navbar {
     display: flex;
     flex-direction: row;
-    background-color: #1E1E1E;
+    background-color: #2a2a2a;
     justify-content: space-between;
-    padding: 2px;
+    padding: 1em;
+    align-items: center;
   }
 
 
@@ -453,13 +454,12 @@ li a {
     display: inline-flex;
     list-style-type: none;
     overflow: hidden;
-    background-color: #1E1E1E;
+
 
 
   }
 
   li a {
-
     color: #f9e2cc;
     text-align: center;
     padding: 14px 16px;
@@ -468,8 +468,12 @@ li a {
 
   li a:hover:not(.active) {
     background-color: #cc6600;
+    color: #1E1E1E;
   }
 
+  i:hover {
+    color: #1E1E1E;
+  }
 
 
   article {
@@ -680,6 +684,7 @@ li a {
   .signup1 {
     display: flex;
     flex-direction: column;
+    padding: 1em;
   }
 
   .signup1 img {
