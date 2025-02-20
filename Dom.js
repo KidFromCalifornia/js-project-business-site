@@ -10,20 +10,24 @@ hamMenu.addEventListener('click', () => {
 }
 )
 
+function showDescription() {
+  const dropdown = document.getElementById('monsterDropdown');
+  const selectedValue = dropdown.value;
+  const gridItems = document.querySelectorAll('.inside img');
+  // Remove filter from all items
+  gridItems.forEach(item => {
+    item.classList.remove('filter');
+  });
 
-function filterPage() {
-  let dropdown = document.getElementById("monsterDropdown");
-  let selectedMonster = dropdown.value;
-  let pages = document.getElementsByClassName("monster-page");
-
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-  }
-
-  if (selectedMonster) {
-    document.getElementById(selectedMonster).style.display = "block";
+  // Apply filter to the selected item if not "Choose"
+  if (selectedValue !== 'Choose') {
+    const selectedItem = document.getElementById(selectedValue);
+    if (selectedItem) {
+      selectedItem.classList.add('filter');
+    }
   }
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let dropdown = document.getElementById("monsterDropdown");
@@ -38,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       audio.load();
       audio.play();
 
-      // Add animation class to body and select dropdown
+
       document.body.classList.add("monster-mash-effect");
       dropdown.classList.add("monster-mash-effect");
       audio.classList.add("monster-mash-effect");
@@ -47,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       audio.pause();
       audio.currentTime = 0;
 
-      // Remove animation class when another option is selected
+
       document.body.classList.remove("monster-mash-effect");
       dropdown.classList.remove("monster-mash-effect");
       audio.classList.remove("monster-mash-effect");
