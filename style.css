@@ -331,15 +331,14 @@ select {
 }
 
 .inside select {
-  display: none;
+  display: block;
   width: 100%;
-  padding: o 1em;
-  font-size: 2em;
-  margin: bottom 1em;
-  ;
-  border: 1px solid #ccc;
+  padding: 1em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  border: none;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #2a2d2c;
   cursor: pointer;
 }
 
@@ -675,7 +674,7 @@ input[type=submit]:hover {
 
     background-color: #353535;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(, 1fr));
     grid-template-rows: repeat(3, 1fr);
     gap: 1em;
     height: auto;
