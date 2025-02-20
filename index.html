@@ -22,9 +22,6 @@
   <title>Midnight Matinee</title>
 </head>
 
-
-
-
 <body>
   <!--big nav for 1020px -->
   <nav class="big-navbar">
@@ -45,7 +42,6 @@
     </ul>
   </nav>
 
-
   <!-- on mobile navbar is after Header -->
 
   <nav class="mobile-nav">
@@ -63,7 +59,6 @@
     </ul>
   </nav>
 
-
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
   <header class="small-header">
     <div class="hero-video">
@@ -76,7 +71,6 @@
                 type="video/mp4">
       </video>
       <div class="shadow"></div>
-
     </div>
     <div id="neon-text">
       <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
@@ -84,17 +78,14 @@
     </div>
   </header>
 
-
   <header class="big-header">
     <img id="hero-image"
          src="./images/theatre.webp"
          alt=" old and creepy Black & white threatre">
-    <div class="shadow"></div>
+    <div class="hero-shadow"></div>
     <div id="neon">
       <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
       </h1>
-    </div>
-    </section>
     </div>
   </header>
 
@@ -128,12 +119,10 @@
         enter? Browse our collection… if you dare.
       </p>
     </article>
-    <section class="selectbar">
+    <section class="monster-dropdown">
       <select id="monsterDropdown"
               onchange="showDescription()">
-        <option value="Choose">
-          Choose your Monster
-        </option>
+        <option value="Choose">Choose your Monster</option>
         <option value="vampire">Vampires</option>
         <option value="frankenstein">Frankenstein’s Monster</option>
         <option value="mummy">Mummies</option>
@@ -149,67 +138,295 @@
         <option value="puppet">Living Puppets/Dolls</option>
         <option value="reanimated_corpse">Reanimated Corpses</option>
         <option value="hybrid_creature">Hybrid Creatures</option>
-        <p id="description"></p>
+        <option class="mm-party"
+                value="monsterMash">MoNsTeR mAsH</option> <!-- Plays audio -->
       </select>
+
+
+      <audio id="monsterAudio"
+             controls>
+        <source id="audioSource"
+                src=""
+                type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
     </section>
     <!-- Main Grid layout  -->
 
-    <section class="grid-container">
+    <section class="grid-container ">
       <div class="column one">
         <div class="inside item1">
-          <img src="./images/son-dr-j.webp">
-          <p> Son of doctor Jekyll </p><button> BUY </button>
+          <img id="invisible_man"
+               src="./images/The_Invisible_Man_1933.jpg">
+          <p> The Invisible Man (1933) </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item2">
-          <img src="./images/bride.webp">
-          <p>Bride of Frankenstein (1935) </p> <button> BUY </button>
+          <img id="mad_scientist_frankenstein"
+               src="./images/bride.webp">
+          <p>Bride of Frankenstein (1935) </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item3">
-          <img src="./images/Godzilla.webp">
-          <p>Gojira (1954) </p> <button> BUY </button>
+          <img Id="giant_monster"
+               src="./images/Godzilla.webp">
+          <p>Gojira (1954)</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item4">
-          <img src="./images/Dracula2.webp">
-          <p> Dracula </p><button> BUY</button>
+          <img id="vampire"
+               src="./images/Dracula2.webp">
+          <p> Dracula (1931) </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item5">
-          <img src="./images/Dracula2.webp">
-          <p> Dracula </p><button> BUY</button>
+          <img id="hybrid_creature"
+               src="./images/Thing_1951.jpg">
+          <p> The Thing from Another World (1951)</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item6">
-          <img src="./images/Dracula2.webp">
-          <p> Dracula </p><button> BUY</button>
+          <img src="./images/The_Lost_World_1925.jpg">
+          <p> The Lost World (1925) </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
 
       </div>
       <div class="column two">
         <div class="inside item7">
-          <img src="./images/fearless.webp"><button> BUY </button>
+          <img id="vampire"
+               src="./images/fearless.webp">
           <p>Fearless Vampire killers </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="column three">
         <div class="inside item8">
-          <img src="./images/brain.webp">
-          <p>The Brain That Wouldn't Die</p><button> BUY </button>
+          <img id="mad_scientist"
+               src="./images/brain.webp">
+          <p>The Brain That Wouldn't Die</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item9">
-          <img src="./images/black-lagoon.webp"><button> BUY </button>
+          <img id="mutant"
+               src="./images/black-lagoon.webp">
+          <p> Creature from the Black Lagoon
+            (1954)
+          </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item10">
-          <img src="./images/mummy2.webp"><button> BUY </button>
+          <img id="reanimated_corpse"
+               src="./images/mummy2.webp">
+          <p>The Mummy (1932)</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item11">
-          <img src="./images/king-kong.webp"><button> BUY </button>
+          <img id="giant_monster"
+               src="./images/king-kong.webp">
+          <p>King Kong (1933) </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item12">
-          <img src="./images/king-kong.webp"><button> BUY </button>
+          <img id="giant_monster"
+               src="./images/godzila-king.jpg">
+          <p> Godzilla, King of the Monsters!
+            (1956)</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item13">
-          <img src="./images/king-kong.webp"><button> BUY </button>
+          <img id="frankenstein"
+               src="./images/Frankenstein_poster_1931.jpg">
+          <p> Frankenstein (1931)</p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+
 
     <!-- Newletter form-->
     <section>
@@ -255,7 +472,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -267,28 +483,24 @@
         <li>
           <a href="https://github.com/KidFromCalifornia"
              target="_blank"
-             class="
-             Github">
-            <i class="fa-brands fa-github"></i>
+             class="Github">
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/jonathanwhicks/"
              target="_blank"
-             class="
-             linkedin">
+             class="linkedin">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/thekidfromcalifornia"
              target="_blank"
-             class="
-             instagram">
+             class="instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
-    </div>
+      </ul>
     </div>
   </footer>
   <script src="Dom.js"></script>
