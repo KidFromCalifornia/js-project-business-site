@@ -754,8 +754,6 @@ input[type=submit]:hover {
     width: 100%;
     box-sizing: border-box;
     padding: 2.25em;
-
-
   }
 
 
@@ -784,6 +782,7 @@ input[type=submit]:hover {
 
   .inside img:hover {
     filter: grayscale(0%);
+    cursor: pointer;
   }
 
   .small-header {
@@ -878,12 +877,13 @@ input[type=submit]:hover {
   }
 
   .column.two {
-    object-fit: contain;
+
     grid-area: center;
     display: grid;
     margin: 1em;
     box-sizing: border-box;
-    max-height: 1362px;
+    max-height: 1300px;
+    min-height: 1300px;
   }
 
   .column.three {
