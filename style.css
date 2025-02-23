@@ -452,7 +452,7 @@ input[type=submit]:hover {
   gap: 1em;
 }
 
-/* Media query for landscape mode with max width of 1400px */
+/* Media query for landscape mode with max width of 1194px */
 @media (min-width: 768px) and (max-width: 1194px) {
   body {
     font-size: 1rem;
@@ -547,11 +547,21 @@ input[type=submit]:hover {
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     grid-template-rows: repeat(3, 1fr);
     grid-area: auto;
+
   }
 
   .column img {
     width: 100%;
     height: auto;
+  }
+
+  .column.two .item7 img {
+    width: min-content;
+    max-height: 925px;
+    margin: 1em;
+    height: 100%;
+
+
   }
 
   .footer-parent {
@@ -673,6 +683,17 @@ input[type=submit]:hover {
     grid-row: 3/ 4;
 
   }
+
+  .item12 {
+    grid-column: 1/ 2;
+    grid-row: 4 / 5;
+  }
+
+  .item13 {
+    grid-column: 2 / 3;
+    grid-row: 4/ 5;
+
+  }
 }
 
 /* Large devices (desktops, 1195px and up) */
@@ -766,6 +787,14 @@ input[type=submit]:hover {
     width: 100%;
     max-height: 240px;
     max-width: 175px
+  }
+
+  .column.two .item7 img {
+
+    width: min-content;
+    max-height: 670px;
+
+
   }
 
   .column.three img {
@@ -863,9 +892,9 @@ input[type=submit]:hover {
     grid-template-rows: repeat(3, 1fr);
     gap: 1em;
     height: auto;
-    max-width: 30vm;
     column-gap: 1em;
     box-sizing: border-box;
+    max-height: 1300px;
 
   }
 
@@ -882,9 +911,13 @@ input[type=submit]:hover {
     display: grid;
     margin: 1em;
     box-sizing: border-box;
-    max-height: 1300px;
-    min-height: 1300px;
+
+
+    grid-template-rows: repeat(4, 1fr);
+
   }
+
+
 
   .column.three {
     display: grid;
@@ -960,12 +993,23 @@ input[type=submit]:hover {
 
   .item12 {
     grid-column: 1/ 2;
-    grid-row: 3 / 4;
+    grid-row: 3 / 5;
   }
 
   .item13 {
     grid-column: 2 / 3;
-    grid-row: 3/ 4;
+    grid-row: 3/ 5;
+
+  }
+
+  .item14 {
+    grid-column: 1/ 2;
+    grid-row: 4 / 5;
+  }
+
+  .item15 {
+    grid-column: 2 / 3;
+    grid-row: 4/ 5;
 
   }
 
