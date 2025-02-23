@@ -17,7 +17,6 @@
   <script src="https://kit.fontawesome.com/04d91e792e.js"
           crossorigin="anonymous"></script>
 
-  >
 
   <title>Midnight Matinee</title>
 </head>
@@ -163,19 +162,17 @@
         <option class="mm-party"
                 value="monsterMash"
                 aria-label="A spooky song-themed monster party; when selected music plays and screen flashes colors ">
-          MoNsTeR mAsH</option>
+          MoNsTeR mAsH!</option>
       </select>
 
 
       <audio id="monsterAudio"
              controls>
-        <audio controls
-               aria-label="Monster Mash song">
-          <source id="audioSource"
-                  src="audio/monster-mash.mp3"
-                  type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <source id="audioSource"
+                src="./audio/monster-mash.mp3"
+                type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
 
     </section>
     <!-- Main Grid layout  -->
@@ -311,25 +308,25 @@
       </div>
       <div class="column two">
         <div class="inside item7">
-          <<img id="vampire"
-                src="./images/fearless.webp"
-                alt="Fearless Vampire Killers - a horror comedy movie poster">
-            <p>Fearless Vampire killers </p>
-            <div class="dropdown">
-              <form action="https://httpbin.org/post"
-                    method="POST">
-                <select id="poster-selection"
-                        name="size">
-                  <option value="Choose"> Choose A Size</option>
-                  <option value="small">Small </option>
-                  <option value="medium">Medium </option>
-                  <option value="large">Large </option>
-                  <option value="magnet">Add a Magnet</option>
-                </select>
-                <button type="submit"
-                        class="submit-btn">Submit</button>
-              </form>
-            </div>
+          <img id="vampire"
+               src="./images/fearless.webp"
+               alt="Fearless Vampire Killers - a horror comedy movie poster">
+          <p>Fearless Vampire killers </p>
+          <div class="dropdown">
+            <form action="https://httpbin.org/post"
+                  method="POST">
+              <select id="poster-selection"
+                      name="size">
+                <option value="Choose"> Choose A Size</option>
+                <option value="small">Small </option>
+                <option value="medium">Medium </option>
+                <option value="large">Large </option>
+                <option value="magnet">Add a Magnet</option>
+              </select>
+              <button type="submit"
+                      class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="inside item14">
           <img id="giant_monster"
