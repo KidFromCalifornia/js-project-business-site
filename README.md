@@ -1,13 +1,9 @@
 # js-project-business-site
 https://midnight-matinee.netlify.app/
 
-Midnight Matinee is fictional webstore designed and created for Techingo Dev. Boot camp spring 2025-
+Midnight Matinee is a fictional webstore created for the Techingo Dev Boot Camp in spring 2025. The store is designed to sell reproduction monster posters from the golden age of cinema. 
 
-the store is created with the idea to sell reproduction Monster monster posters from golden age cinema. 
+The design features a responsive layout that incorporates flexbox and grid systems, along with animations. It includes various forms, such as checkboxes, dropdowns, and a signup form. 
 
-this design includes a responsive design with a flex and grid layouts with animations. The design also includes a variety of forms including checkboxes, drop downs and signupf orm .
-
-In mobile view, the navbar includes a hamburger menu that operates with the aid from javascript. 
-
-If you click around you might even have a dance.
+In the mobile view, the navigation bar has a hamburger menu that operates with the help of JavaScript. If you click around, you might even discover a fun surprise!
 
