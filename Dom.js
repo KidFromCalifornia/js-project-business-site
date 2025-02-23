@@ -23,7 +23,7 @@ function showDescription() {
   if (selectedValue !== 'Choose') {
     const selectedItem = document.getElementById(selectedValue);
     if (selectedItem) {
-      selectedItem.classList.add('filter');
+      selectedItem.classList.remove('filter');
     }
   }
 }
