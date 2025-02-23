@@ -975,6 +975,7 @@ input[type=submit]:hover {
     grid-template-areas: "grid-left grid-right";
     padding: 5em;
     gap: 2em;
+    max-height: fit-content;
   }
 
   .signup1 {
