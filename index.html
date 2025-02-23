@@ -17,7 +17,7 @@
   <script src="https://kit.fontawesome.com/04d91e792e.js"
           crossorigin="anonymous"></script>
 
-
+  >
 
   <title>Midnight Matinee</title>
 </head>
@@ -67,10 +67,14 @@
              muted
              playsinline
              class="hero-video">
-        <source src="./images/dead-men-walk-intro.mp4"
-                type="video/mp4">
-      </video>
-      <div class="hero-shadow"></div>
+        <video controls
+               aria-label="Introduction scene from Dead Men Walk">
+          <source src="./images/dead-men-walk-intro.mp4"
+                  type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-shadow"></div>
     </div>
     <div class="neon-text">
       <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
@@ -121,35 +125,57 @@
     </article>
     <section class="monster-dropdown">
       <select id="monsterDropdown"
+              aria-label="Select a monster type"
               onchange="showDescription()">
-        <option value="Choose">Choose your Monster</option>
-        <option value="vampire">Vampires</option>
-        <option value="frankenstein">Frankenstein’s Monster</option>
-        <option value="mummy">Mummies</option>
-        <option value="werewolf">Werewolves</option>
-        <option value="invisible_man">Invisible Men</option>
-        <option value="zombie">Zombies</option>
-        <option value="mad_scientist">Mad Scientists & Their Creations</option>
-        <option value="ghost">Ghosts & Phantoms</option>
-        <option value="mutant">Mutants & Deformed Beings</option>
-        <option value="giant_monster">Giant Monsters</option>
-        <option value="cursed_human">Cursed Humans</option>
-        <option value="evil_spirit">Evil Spirits & Supernatural Entities</option>
-        <option value="puppet">Living Puppets/Dolls</option>
-        <option value="reanimated_corpse">Reanimated Corpses</option>
-        <option value="hybrid_creature">Hybrid Creatures</option>
+        <option value="Choose"
+                aria-label="Choose a monster from the list">Choose your Monster</option>
+        <option value="vampire"
+                aria-label="Blood-sucking undead creatures">Vampires</option>
+        <option value="frankenstein"
+                aria-label="A reanimated creature made from body parts">Frankenstein’s Monster</option>
+        <option value="mummy"
+                aria-label="Ancient preserved corpses wrapped in bandages">Mummies</option>
+        <option value="werewolf"
+                aria-label="Humans who transform into wolves under a full moon">Werewolves</option>
+        <option value="invisible_man"
+                aria-label="A man who has become completely invisible">Invisible Men</option>
+        <option value="zombie"
+                aria-label="Reanimated dead with an appetite for flesh">Zombies</option>
+        <option value="mad_scientist"
+                aria-label="Brilliant but insane scientists and their horrific creations">Mad Scientists & Their
+          Creations</option>
+        <option value="ghost"
+                aria-label="Spirits of the dead haunting the living">Ghosts & Phantoms</option>
+        <option value="mutant"
+                aria-label="Creatures mutated due to radiation or experiments">Mutants & Deformed Beings</option>
+        <option value="giant_monster"
+                aria-label="Massive beasts that terrorize cities">Giant Monsters</option>
+        <option value="cursed_human"
+                aria-label="Humans suffering from supernatural curses">Cursed Humans</option>
+        <option value="evil_spirit"
+                aria-label="Malevolent supernatural entities">Evil Spirits & Supernatural Entities</option>
+        <option value="puppet"
+                aria-label="Dolls or puppets brought to life">Living Puppets/Dolls</option>
+        <option value="reanimated_corpse"
+                aria-label="Dead bodies revived through unnatural means">Reanimated Corpses</option>
+        <option value="hybrid_creature"
+                aria-label="Creatures combining features of different species">Hybrid Creatures</option>
         <option class="mm-party"
-                value="monsterMash">MoNsTeR mAsH</option> <!-- Plays audio -->
+                value="monsterMash"
+                aria-label="A spooky song-themed monster party; when selected music plays and screen flashes colors ">
+          MoNsTeR mAsH</option>
       </select>
 
 
       <audio id="monsterAudio"
              controls>
-        <source id="audioSource"
-                src=""
-                type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+        <audio controls
+               aria-label="Monster Mash song">
+          <source id="audioSource"
+                  src="audio/monster-mash.mp3"
+                  type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
 
     </section>
     <!-- Main Grid layout  -->
@@ -158,7 +184,8 @@
       <div class="column one">
         <div class="inside item1">
           <img id="invisible_man"
-               src="./images/The_Invisible_Man_1933.jpg">
+               src="./images/The_Invisible_Man_1933.jpg"
+               alt="Poster of The Invisible Man (1933)">
           <p> The Invisible Man (1933) </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -178,7 +205,8 @@
         </div>
         <div class="inside item2">
           <img id="mad_scientist_frankenstein"
-               src="./images/bride.webp">
+               src="./images/bride.webp"
+               alt="Bride of Frankenstein with dramatic lighting (1935)">
           <p>Bride of Frankenstein (1935) </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -197,8 +225,9 @@
           </div>
         </div>
         <div class="inside item3">
-          <img Id="giant_monster"
-               src="./images/Godzilla.webp">
+          <img id="giant_monster"
+               src="./images/Godzilla.webp"
+               alt="Gojira (1954) - The original Japanese Godzilla">
           <p>Gojira (1954)</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -218,7 +247,8 @@
         </div>
         <div class="inside item4">
           <img id="vampire"
-               src="./images/Dracula2.webp">
+               src="./images/Dracula2.webp"
+               alt="Classic Dracula (1931) poster featuring Bela Lugosi">
           <p> Dracula (1931) </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -238,7 +268,8 @@
         </div>
         <div class="inside item5">
           <img id="hybrid_creature"
-               src="./images/Thing_1951.jpg">
+               src="./images/Thing_1951.jpg"
+               alt="The Thing from Another World (1951) movie poster">
           <p> The Thing from Another World (1951)</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -257,7 +288,8 @@
           </div>
         </div>
         <div class="inside item6">
-          <img src="./images/The_Lost_World_1925.jpg">
+          <img src="./images/The_Lost_World_1925.jpg"
+               alt="The Lost World (1925) poster with dinosaurs">
           <p> The Lost World (1925) </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -279,28 +311,30 @@
       </div>
       <div class="column two">
         <div class="inside item7">
-          <img id="vampire"
-               src="./images/fearless.webp">
-          <p>Fearless Vampire killers </p>
-          <div class="dropdown">
-            <form action="https://httpbin.org/post"
-                  method="POST">
-              <select id="poster-selection"
-                      name="size">
-                <option value="Choose"> Choose A Size</option>
-                <option value="small">Small </option>
-                <option value="medium">Medium </option>
-                <option value="large">Large </option>
-                <option value="magnet">Add a Magnet</option>
-              </select>
-              <button type="submit"
-                      class="submit-btn">Submit</button>
-            </form>
-          </div>
+          <<img id="vampire"
+                src="./images/fearless.webp"
+                alt="Fearless Vampire Killers - a horror comedy movie poster">
+            <p>Fearless Vampire killers </p>
+            <div class="dropdown">
+              <form action="https://httpbin.org/post"
+                    method="POST">
+                <select id="poster-selection"
+                        name="size">
+                  <option value="Choose"> Choose A Size</option>
+                  <option value="small">Small </option>
+                  <option value="medium">Medium </option>
+                  <option value="large">Large </option>
+                  <option value="magnet">Add a Magnet</option>
+                </select>
+                <button type="submit"
+                        class="submit-btn">Submit</button>
+              </form>
+            </div>
         </div>
         <div class="inside item14">
           <img id="giant_monster"
-               src="./images/island.-shortwebp.webp">
+               src="./images/island.-shortwebp.webp"
+               alt="Unknown Island - Vintage adventure movie poster with dinosaurs">
           <p> Unknown Island </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -319,8 +353,10 @@
           </div>
         </div>
         <div class="inside item15">
-          <img id="giant_monster"
-               src="./images/horrors-short.webp">
+          <img id="ghost"
+               src="./images/horrors-short.webp"
+               alt="House of Horrors - Classic horror movie poster">
+
           <p> House of horrors</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -342,7 +378,9 @@
       <div class="column three">
         <div class="inside item8">
           <img id="mad_scientist"
-               src="./images/brain.webp">
+               src="./images/brain.webp"
+               alt="The Brain That Wouldn't Die - Sci-fi horror film poster with screaming women">
+
           <p>The Brain That Wouldn't Die</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -362,7 +400,8 @@
         </div>
         <div class="inside item9">
           <img id="mutant"
-               src="./images/black-lagoon.webp">
+               src="./images/black-lagoon.webp"
+               alt="Creature from the Black Lagoon (1954) - A classic monster film">
           <p> Creature from the Black Lagoon
             (1954)
           </p>
@@ -384,7 +423,9 @@
         </div>
         <div class="inside item10">
           <img id="reanimated_corpse"
-               src="./images/mummy2.webp">
+               src="./images/mummy2.webp"
+               alt="The Mummy (1932) - Ancient horror film poster">
+
           <p>The Mummy (1932)</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -404,7 +445,8 @@
         </div>
         <div class="inside item11">
           <img id="giant_monster"
-               src="./images/king-kong.webp">
+               src="./images/king-kong.webp"
+               alt="King Kong (1933) - Giant ape on the Empire State Building">
           <p>King Kong (1933) </p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -424,7 +466,8 @@
         </div>
         <div class="inside item12">
           <img id="giant_monster"
-               src="./images/godzila-king.jpg">
+               src="./images/godzila-king.jpg"
+               alt="Godzilla, King of the Monsters! (1956) - American version poster">
           <p> Godzilla, King of the Monsters!
             (1956)</p>
           <div class="dropdown">
@@ -446,7 +489,8 @@
         </div>
         <div class="inside item13">
           <img id="frankenstein"
-               src="./images/Frankenstein_poster_1931.jpg">
+               src="./images/Frankenstein_poster_1931.jpg"
+               alt="Frankenstein (1931) - Boris Karloff as the monster">
           <p> Frankenstein (1931)</p>
           <div class="dropdown">
             <form action="https://httpbin.org/post"
@@ -472,7 +516,8 @@
     <section>
       <div id="newsletter">
         <div class="grid-left signup1">
-          <img src="./images/thebride.png">
+          <img src="./images/thebride.png"
+               alt="The Bride of Frankenstein with iconic white streaked hair">
         </div>
         <div class="grid-right signup2">
           <form action="https://httpbin.org/post">
@@ -523,20 +568,23 @@
         <li>
           <a href="https://github.com/KidFromCalifornia"
              target="_blank"
-             class="Github">
+             class="Github"
+             Alt=" Link to Github">
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/jonathanwhicks/"
              target="_blank"
-             class="linkedin">
+             class="linkedin"
+             alt=" Link to linkdin">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/thekidfromcalifornia"
              target="_blank"
-             class="instagram">
+             class="instagram"
+             alt=" Link to instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
