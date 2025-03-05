@@ -61,19 +61,19 @@
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
   <header class="small-header">
     <div class="hero-video">
-      <video autoplay
+      <video controls
+             autoplay
              loop
              muted
              playsinline
-             class="hero-video">
-        <video controls
-               aria-label="Introduction scene from Dead Men Walk">
-          <source src="./images/dead-men-walk-intro.mp4"
-                  type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+             class="hero-video"
+             aria-label="Introduction scene from Dead Men Walk">
+        <source src="./images/dead-men-walk-intro.mp4"
+                type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-        <div class="hero-shadow"></div>
+      <div class="hero-shadow"></div>
     </div>
     <div class="neon-text">
       <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
@@ -112,15 +112,14 @@
       <h2 id="MM-title"
           style="letter-spacing: 3px;">
         I BID YOU WELCOME... </h2>
-      <p style="letter-spacing: 1px;">
+      <h5 Class="subheader-text"
+          style="letter-spacing: 1px;">
         Where the shadows whisper and the legends live on! Step into our crypt of classic horror movie posters,
         unearthed from the golden age of terror spanning the eerie realms of the 1930s to the 1960s. From the fanged
         menace of Dracula to the towering dread of Godzilla, our collection is a shrine to the macabre. Whether you're
-        a
-        devoted horror fan or seeking a spine-chilling gift, you'll find the perfect relic to haunt your walls. Dare
-        to
-        enter? Browse our collection… if you dare.
-      </p>
+        a devoted horror fan or seeking a spine-chilling gift, you'll find the perfect relic to haunt your walls. Dare
+        to enter? Browse our collection… if you dare.
+      </h5>
     </article>
     <section class="monster-dropdown">
       <select id="monsterDropdown"
@@ -185,7 +184,7 @@
                alt="Poster of The Invisible Man (1933)">
           <p> The Invisible Man (1933) </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -206,7 +205,7 @@
                alt="Bride of Frankenstein with dramatic lighting (1935)">
           <p>Bride of Frankenstein (1935) </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -227,7 +226,7 @@
                alt="Gojira (1954) - The original Japanese Godzilla">
           <p>Gojira (1954)</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -248,7 +247,7 @@
                alt="Classic Dracula (1931) poster featuring Bela Lugosi">
           <p> Dracula (1931) </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -269,7 +268,7 @@
                alt="The Thing from Another World (1951) movie poster">
           <p> The Thing from Another World (1951)</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -289,7 +288,7 @@
                alt="The Lost World (1925) poster with dinosaurs">
           <p> The Lost World (1925) </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -313,7 +312,7 @@
                alt="Fearless Vampire Killers - a horror comedy movie poster">
           <p>Fearless Vampire killers </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -334,7 +333,7 @@
                alt="Unknown Island - Vintage adventure movie poster with dinosaurs">
           <p> Unknown Island </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -356,7 +355,7 @@
 
           <p> House of horrors</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -380,7 +379,7 @@
 
           <p>The Brain That Wouldn't Die</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -403,7 +402,7 @@
             (1954)
           </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -425,7 +424,7 @@
 
           <p>The Mummy (1932)</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -446,7 +445,7 @@
                alt="King Kong (1933) - Giant ape on the Empire State Building">
           <p>King Kong (1933) </p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -468,7 +467,7 @@
           <p> Godzilla, King of the Monsters!
             (1956)</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -490,7 +489,7 @@
                alt="Frankenstein (1931) - Boris Karloff as the monster">
           <p> Frankenstein (1931)</p>
           <div class="dropdown">
-            <form action="https://httpbin.org/post"
+            <form action="https://httpbin.org/anything"
                   method="POST">
               <select id="poster-selection"
                       name="size">
@@ -517,7 +516,7 @@
                alt="The Bride of Frankenstein with iconic white streaked hair">
         </div>
         <div class="grid-right signup2">
-          <form action="https://httpbin.org/post">
+          <form action="https://httpbin.org/anything">
             <div class="form-container">
               <img src="./images/movieticket.svg">
               <p> Sign up for our Nightmare Newsletter and be the first to uncover

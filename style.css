@@ -4,7 +4,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #353535;
+  background-color: hwb(0 21% 79%);
   color: #f9e2cc;
   padding: 0;
   margin: 0;
@@ -28,6 +28,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 2em;
+  font-size: 16px;
 }
 
 audio {
@@ -39,7 +40,7 @@ audio {
 }
 
 .monster-dropdown select {
-  font-size: 18px;
+  font-size: 13px;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -267,10 +268,11 @@ article {
   box-sizing: border-box;
 }
 
-article p {
+article h5 {
   width: 90%;
-  text-align: justify;
+
   hyphens: none;
+
 }
 
 select {
@@ -510,17 +512,28 @@ input[type=submit]:hover {
 
   }
 
+  article h5 {
+    text-align: justify;
+  }
+
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(50vw, 1fr));
-    grid-template-areas: "left center"
-      "right right";
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "center"
+      "right";
     padding: 1em;
   }
 
   .inside {
     padding: 1em;
     margin: 1em;
+  }
+
+
+  .monster-dropdown select {
+    font-size: 18px;
   }
 
   .dropdown select {
@@ -536,9 +549,6 @@ input[type=submit]:hover {
     display: none;
   }
 
-  .monster-dropdown select {
-    width: 100%;
-  }
 
 
 
@@ -550,10 +560,7 @@ input[type=submit]:hover {
 
   }
 
-  .column img {
-    width: 100%;
-    height: auto;
-  }
+
 
   .column.two .item7 img {
     width: min-content;
@@ -686,12 +693,12 @@ input[type=submit]:hover {
 
   .item12 {
     grid-column: 1/ 2;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
   }
 
   .item13 {
     grid-column: 2 / 3;
-    grid-row: 4/ 5;
+    grid-row: 3/ 4;
 
   }
 }
@@ -759,9 +766,19 @@ input[type=submit]:hover {
 
   }
 
+  article h5 {
+    text-align: justify;
+  }
+
+
+  .monster-dropdown select {
+    font-size: 18px;
+  }
 
   .monster-dropdown option[value=monsterMash] {
     display: block;
+    font-size: 20px;
+
   }
 
   .column.one .inside {
@@ -783,10 +800,12 @@ input[type=submit]:hover {
     width: 100%;
   }
 
-  .column.one img {
+  .one .inside img,
+  .three .inside img {
     width: 100%;
+    width: auto;
     max-height: 240px;
-    max-width: 175px
+
   }
 
   .column.two .item7 img {
@@ -797,15 +816,8 @@ input[type=submit]:hover {
 
   }
 
-  .column.three img {
-    width: 100%;
-    max-height: 240px;
-    max-width: 175px
-  }
-
   .inside img {
-    width: 100%;
-    height: auto;
+
     filter: grayscale(100%);
   }
 
