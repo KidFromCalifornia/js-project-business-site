@@ -23,7 +23,8 @@
 
 <body>
   <!--big nav for 1020px -->
-  <nav class="big-navbar">
+  <nav class="big-navbar"
+       aria-label="Main navigation bar">
     <ul id="bignav-left">
       <li><a href="#home">Home </a></li>
       <li><a href="#contact">Make A wish </a></li>
@@ -43,7 +44,8 @@
 
   <!-- on mobile navbar is after Header -->
 
-  <nav class="mobile-nav">
+  <nav class="mobile-nav"
+       aria-label="Main navigation for mobile devices">
     <div class="mobilenav-left">
       <div class="ham-menu">
         <span></span>
@@ -59,7 +61,8 @@
   </nav>
 
   <!-- Header video  on mobile and hero image on landscape/ large screnens -->
-  <header class="small-header">
+  <header class="small-header"
+          aria-label="Header with video  only on mobile">
     <div class="hero-video">
       <video controls
              autoplay
@@ -81,10 +84,11 @@
     </div>
   </header>
 
-  <header class="big-header">
+  <header class="big-header"
+          aria-label="Header with image for large screens">
     <img id="hero-image"
          src="./images/theatre.webp"
-         alt=" old and creepy Black & white threatre">
+         alt="old and creepy Black & white theatre">
     <div class="hero-shadow"></div>
     <div class="neon-text">
       <h1 data-text="MIDNIGHT MATINÉE">MIDNIGHT <br> MATINÉE
@@ -94,7 +98,8 @@
 
   <!-- hamburger list items -->
 
-  <div class="ham-offscreen">
+  <div class="ham-offscreen"
+       aria-label="Hamburger menu items">
     <ul>
       <li>Home</li>
       <li>Login</li>
@@ -107,7 +112,7 @@
   <!--Main Content -->
 
 
-  <main>
+  <main aria-label="Main content area">
     <article>
       <h2 id="MM-title"
           style="letter-spacing: 3px;">
@@ -121,7 +126,8 @@
         to enter? Browse our collection… if you dare.
       </h5>
     </article>
-    <section class="monster-dropdown">
+    <section class="monster-dropdown"
+             aria-label="Monsters selection dropdown ">
       <select id="monsterDropdown"
               aria-label="Select a monster type"
               onchange="showDescription()">
@@ -176,7 +182,8 @@
     </section>
     <!-- Main Grid layout  -->
 
-    <section class="grid-container">
+    <section class="grid-container"
+             aria-label="movie Poster  layout">
       <div class="column one">
         <div class="inside item1">
           <img id="invisible_man"
@@ -509,7 +516,7 @@
 
 
     <!-- Newletter form-->
-    <section>
+    <section aria-label="Newsletter subscription form">
       <div id="newsletter">
         <div class="grid-left signup1">
           <img src="./images/thebride.png"
@@ -518,7 +525,8 @@
         <div class="grid-right signup2">
           <form action="https://httpbin.org/anything">
             <div class="form-container">
-              <img src="./images/movieticket.svg">
+              <img src="./images/movieticket.svg"
+                   alt="Movie ticket icon">
               <p> Sign up for our Nightmare Newsletter and be the first to uncover
                 limited-edition prints, spine-chilling poster editions coming soon, and blink-and-you’ll-miss-it snap
                 deals. Once they’re gone, they’re gone forever! Don’t let these exclusive horrors slip into the
@@ -555,7 +563,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer aria-label="Footer content">
     <div class="footer-parent">
       <div class="footer-left">
         <span>©Jonny Hicks 2025 </span>
